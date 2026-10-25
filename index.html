@@ -5,62 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my website !</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
     </style>
 
 </head>
 <body>
     <nav>
-        <a href="" id="logo">Logo</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Portfolio</a>
+        <a href="" id="logo">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#portfolio">Portfolio</a>
     </nav>
 
     <main>  
 
-        <img src="header.png" alt="Header image.">
+        <img id="header-img" src="header.png" alt="Header image.">
 
         <section id="intro">
             <h1>Pearl</h1>
             Game Developer. Freelance Programmer.<br>
+            <p id="fancy-quote">"Boingfisch."</p>
         </section>
 
-        <div class="section-container">
+        <div id="shadow-thing">
+        <div id="section-container">
 
-            <section>
+            <section id="about">
             <h2>ABOUT ME</h2>
-            <p>
-            Name : Pearl<br>
-            Langugages : EN || FR || DE (learning) || RU <br>
-            Occupation : Indie Developer || Freelance Programmer<br>
-            Interests : ...<br>
-            Skills : ...<br>!
-            </p>
-            </section>
-
-            <section>
-            <h2>CONTACT ME</h2>
-            <p>
-            pls don't<br>
-            </p>
-            <h3>ACCOUNTS</h3>
-            <p>
-                <a href="https://github.com/pearlf2/">Github</a><br>
-                Notice : Any accounts or profiles not included above may be fraudulent.<br>
-            </p>
-            </section>
-
-            <section>
-            <h2>PORTFOLIO</h2>
-            <p>
-            Notice : These projects are entirely human-made, no generative AI was, is or will be used for any of my projects.<br>
-            </p>
-            <div id="portfolio-grid">
-                This website. (simple website made with HTML5, CSS, and JS)
+            <div class="section-content">
+            <i class="fa-regular fa-circle-user"></i> Name : Pearl.<hr>
+            <i class="fa-solid fa-scroll"></i> Languages : 🇬🇧 English ||  🇫🇷  French || 🇩🇪 German (learning) || 🇷🇺 Russian <hr>
+            <i class="fa-solid fa-fish"></i> Occupation : Indie Developer || Freelance Programmer<hr>
+            <i class="fa-solid fa-cheese"></i> Interests : ...<hr>
+            <i class="fa-solid fa-wrench"></i> Skills : ...
             </div>
             </section>
+
+            <section id="contact">
+            <h2>CONTACT ME</h2>
+            <div class="section-content">
+            <i class="fa-solid fa-envelope"></i> Email : <img id="snail" src="snail.png" alt="An image of a huge snail.">
+            </div>
+            <h2>ACCOUNTS</h2>
+                <div class="section-content">
+                <div id="accounts-container">
+                    <a class="account-icon" href="https://github.com/pearlf2/">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    
+                </div>
+                <p class="notice"><strong>Notice</strong> : Any accounts or profiles not included above may be fraudulent.</p>
+                </div>
+            </section>
+
+            <section id="portfolio">
+            <h2>PORTFOLIO</h2>
+                <div class="section-content">
+                <p class="notice"><strong>Notice</strong> : These projects are entirely human-made, there are no plans to use generative AI in any of my projects.</p>
+                </div>
+            <div id="portfolio-grid">
+                This website (simple website made with HTML5, CSS, and JS).
+            </div>
+            </section>
+        </div>
         </div>
 
     </main>
@@ -72,8 +82,8 @@
     <clipPath id="wave" clipPathUnits="objectBoundingBox">
       <path d="
         M0,0
-        C0.0,0.4 0.25,0 0.5,0
-        C0.5,0.4 0.75,0.2 1,0
+        C0.0,0.3 0.25,0 0.5,0
+        C0.5,0.3 0.75,0.15 1,0
         L1,1 L0,1 Z"
         />
     </clipPath>
