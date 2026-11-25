@@ -218,3 +218,7 @@ hr {
 .notice {
     color :rgb(125, 125, 125)
 }
+
+#my-banner {
+    position:fixed
+}
